@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #BDF4F6;
+  background-image: url("./clock-tile-fade.png");
+  background-size: 320px 320px;
+  font-family: "Poiret One", cursive;
+}
+
+#app-box {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 70px auto auto;
+  justify-content: center;
+  align-content: center;
+  color: #354545;
+}
+
+#app-box::selection {
+  background: #354545;
+  color: #FFFFFF;
+}
+
+#clock-box {
+  grid-column: 2;
+  grid-row: 2;
+  width: 800px;
+  height: 650px;
+  background: #929C57;
+  border-radius: 380px 380px 5px 5px;
+  outline: 12px outset #7D7C38;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto;
+}
+
+#clock-box::selection {
+  color: #354545;
+  background: #929C57;
+}
+
+#clock-face {
+  grid-column: 1/span 2;
+  grid-row: 1;
+  position: relative;
+  background: #B3D9C1;
+  width: 600px;
+  height: 350px;
+  top: 60px;
+  left: 100px;
+  border-radius: 320px 320px 25px 25px;
+  border: 10px inset #76927A;
+  padding-top: 110px;
+  text-align: center;
+  font-size: 8rem;
+}
+
+#clock-face::selection {
+  color: #354545;
+  background: #B3D9C1;
+}
+
+#timer-label {
+  position: relative;
+  top: -30px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#timer-label::selection {
+  color: #354545;
+  background: #B3D9C1;
+}
+
+#time-left::selection {
+  color: #354545;
+  background: #B3D9C1;
+}
+
+#session-label, #break-label {
+  position: relative;
+  top: 30px;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+#session-label::selection, #break-label::selection {
+  color: #354545;
+  background: #929C57;
+}
+
+#session-label {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#break-label {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#session-increment, #session-length, #session-decrement, #break-increment, #break-length, #break-decrement {
+  display: inline-block;
+  font-weight: normal;
+}
+
+#session-length, #break-length {
+  font-size: 3rem;
+  width: 80px;
+}
+
+#session-length::selection, #break-length::selection {
+  color: #354545;
+  background: #929C57;
+}
+
+#session-increment:active, #session-decrement:active, #break-increment:active, #break-decrement:active {
+  color: #203030;
+}
+
+#controls {
+  grid-column: 1/span 2;
+  grid-row: 3;
+  position: relative;
+  width: 400px;
+  height: 80px;
+  text-align: center;
+  background: #7D7C38;
+  padding-top: 10px;
+  left: 200px;
+  border: 4px inset #AAA955;
+  border-radius: 12px;
+}
+
+#start_stop, #reset {
+  color: #354545;
+  background: #929C57;
+  border: 4px outset #AAA955;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+#start_stop:active, #reset:active {
+  transform: translateY(1px);
+  border: 4px inset #AAA955;
+  background: #787732;
+  color: #304040;
+}
