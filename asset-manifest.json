@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/timer/static/css/main.f0894ff8.css",
+    "main.js": "/timer/static/js/main.b5c0c4d2.js",
+    "static/js/787.8e9e615b.chunk.js": "/timer/static/js/787.8e9e615b.chunk.js",
+    "static/media/clock-tile-fade.png": "/timer/static/media/clock-tile-fade.413d1d1398284bf740cc.png",
+    "index.html": "/timer/index.html",
+    "main.f0894ff8.css.map": "/timer/static/css/main.f0894ff8.css.map",
+    "main.b5c0c4d2.js.map": "/timer/static/js/main.b5c0c4d2.js.map",
+    "787.8e9e615b.chunk.js.map": "/timer/static/js/787.8e9e615b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0894ff8.css",
+    "static/js/main.b5c0c4d2.js"
+  ]
+}
